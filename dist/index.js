@@ -776,9 +776,7 @@ module.exports = input => {
 const core = __webpack_require__(572);
 const github = __webpack_require__(558);
 const download = __webpack_require__(384);
-const Webhooks = __webpack_require__(317);
-
-
+__webpack_require__(317);
 try {
 
     console.log(`PATH is ${process.env.PATH}`);
