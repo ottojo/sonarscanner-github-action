@@ -6,9 +6,9 @@ inputs:
     required: true
     default: '4.2.0.1873'
   install-dir:
-    description: 'Directory for sonar-scanner installation'
+    description: 'Directory for sonar-scanner installation (absolute path without environment variables)'
     required: true
-    default: '$HOME/sonarscanner'
+    default: '/home/runner/sonarscanner'
 runs:
   using: 'node12'
   main: 'dist/index.js'
