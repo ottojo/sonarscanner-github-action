@@ -15,7 +15,6 @@ try {
     download(scannerDownloadURL, "/tmp/sonarscanner");
     console.log("done");
 
-    console.log(`Hello ${nameToGreet}!`);
     const time = (new Date()).toTimeString();
     core.setOutput("time", time);
     // Get the JSON webhook payload for the event that triggered the workflow
