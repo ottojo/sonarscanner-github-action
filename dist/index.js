@@ -786,6 +786,8 @@ try {
     const scannerDownloadURL = "https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-"
         + scannerVersion + "-linux.zip";
 
+    core.exportVariable("PATH", process.env.PATH + ":"); //TODO path to sonarscanner
+
     console.log(`downloading sonar-scanner from ${scannerDownloadURL}`);
     download(scannerDownloadURL, "/tmp/sonarscanner");
     console.log("done");

@@ -1,10 +1,14 @@
 name: 'sonarscanner'
 description: 'Install and run sonar-scanner'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  sonar-scanner-version:
+    description: 'Version of sonar-scanner'
     required: true
-    default: 'World'
+    default: '4.2.0.1873'
+  run:
+    description: 'Whether to run sonar-scanner after installing'
+    required: true
+    default: 'true'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
