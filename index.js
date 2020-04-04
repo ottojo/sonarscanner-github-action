@@ -19,7 +19,7 @@ try {
 
     // TODO https://github.com/actions/toolkit/tree/master/packages/tool-cache
     console.log(`downloading sonar-scanner from ${scannerDownloadURL} ...`);
-    download(scannerDownloadURL, installDir).then(function () {
+    download(scannerDownloadURL, installDir, {extract: true}).then(function () {
         console.log("done");
 
         if (github.context.eventName === 'pull_request') {
