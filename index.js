@@ -18,7 +18,7 @@ try {
     core.exportVariable("PATH", process.env.PATH + ":" + binPath);
 
     // TODO https://github.com/actions/toolkit/tree/master/packages/tool-cache
-    console.log(`downloading sonar-scanner from ${scannerDownloadURL} ...`);
+    console.log(`downloading sonar-scanner from ${scannerDownloadURL} to ${installDir} ...`);
     download(scannerDownloadURL, installDir, {extract: true}).then(function () {
         console.log("done");
 
