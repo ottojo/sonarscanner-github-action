@@ -1,16 +1,18 @@
 {
   "name": "sonarscanner-github-action",
   "version": "1.0.0",
-  "description": "",
+  "description": "Install and configure sonar-scanner",
+  "repository": "https://github.com/ottojo/sonarscanner-github-action",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "@ottojo",
+  "license": "CC0-1.0",
   "dependencies": {
     "@actions/core": "^1.2.3",
+    "@actions/exec": "^1.0.3",
     "@actions/github": "^2.1.1",
     "download": "^8.0.0"
   }

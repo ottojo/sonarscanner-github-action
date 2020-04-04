@@ -1,17 +1,14 @@
 name: 'sonarscanner'
-description: 'Install and run sonar-scanner'
+description: 'Install and configure sonar-scanner'
 inputs:
   sonar-scanner-version:
     description: 'Version of sonar-scanner'
     required: true
     default: '4.2.0.1873'
-  run:
-    description: 'Whether to run sonar-scanner after installing'
+  install-dir:
+    description: 'Directory for sonar-scanner installation'
     required: true
-    default: 'true'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: '$HOME/sonarscanner'
 runs:
   using: 'node12'
   main: 'dist/index.js'
