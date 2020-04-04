@@ -27,3 +27,10 @@ jobs:
       - name: Run sonar-scanner
         run: sonar-scanner $SONAR_SCANNER_PR_OPTS
 ```
+
+## Building
+```bash
+npm install -g @zeit/ncc
+npm install
+ncc build index.js
+```
