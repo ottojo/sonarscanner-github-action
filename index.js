@@ -22,7 +22,7 @@ try {
     const payload = JSON.stringify(github.context.payload, undefined, 2);
     console.log(`The event payload: ${payload}`);
 
-    if (github.context.eventName === 'pull-request') {
+    if (github.context.eventName === 'pull_request') {
         console.log("Running as PR, adding additional variables for sonar");
         // TODO https://sonarcloud.io/documentation/integrations/ci/other/
         const pullRequestPayload = github.context.payload;
