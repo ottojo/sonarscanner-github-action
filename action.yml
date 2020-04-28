@@ -4,7 +4,7 @@ inputs:
   sonar-scanner-version:
     description: 'Version of sonar-scanner'
     required: true
-    default: '4.2.0.1873'
+    default: '4.3.0.2102'
   install-dir:
     description: 'Directory for sonar-scanner installation (absolute path without environment variables)'
     required: true
